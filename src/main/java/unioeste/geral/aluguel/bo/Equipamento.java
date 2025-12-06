@@ -1,6 +1,8 @@
 package unioeste.geral.aluguel.bo;
 
-public class Equipamento {
+import java.io.Serializable;
+
+public class Equipamento implements Serializable {
     private Long id;
     private String nome;
     private Double valorDiaria;

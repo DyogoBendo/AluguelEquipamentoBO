@@ -1,8 +1,9 @@
 package unioeste.geral.aluguel.bo;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 
-public class PedidoAluguelEquipamento {
+public class PedidoAluguelEquipamento implements Serializable {
     private Long id;
     private Long nroAluguel;
     private LocalDate dataPedido;
