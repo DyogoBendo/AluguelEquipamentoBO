@@ -5,7 +5,7 @@ import java.time.LocalDate;
 
 public class PedidoAluguelEquipamento implements Serializable {
     private Long id;
-    private Long nroAluguel;
+    private String nroAluguel;
     private LocalDate dataPedido;
     private LocalDate dataInicioLocacao;
     private LocalDate dataPrevistoDevolucao;
@@ -18,7 +18,7 @@ public class PedidoAluguelEquipamento implements Serializable {
     public PedidoAluguelEquipamento() {
     }
 
-    public PedidoAluguelEquipamento(Long id, Long nroAluguel, LocalDate dataPedido, LocalDate dataInicioLocacao, LocalDate dataPrevistoDevolucao, Double valorDiaria, Double valorLocacao, Equipamento equipamento, Cliente cliente) {
+    public PedidoAluguelEquipamento(Long id, String nroAluguel, LocalDate dataPedido, LocalDate dataInicioLocacao, LocalDate dataPrevistoDevolucao, Double valorDiaria, Double valorLocacao, Equipamento equipamento, Cliente cliente) {
         this.id = id;
         this.nroAluguel = nroAluguel;
         this.dataPedido = dataPedido;
@@ -38,11 +38,11 @@ public class PedidoAluguelEquipamento implements Serializable {
         this.id = id;
     }
 
-    public Long getNroAluguel() {
+    public String getNroAluguel() {
         return nroAluguel;
     }
 
-    public void setNroAluguel(Long nroAluguel) {
+    public void setNroAluguel(String nroAluguel) {
         this.nroAluguel = nroAluguel;
     }
 
